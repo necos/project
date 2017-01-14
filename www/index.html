@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+
+<!-- ng-app属性を指定-->
+<!--<html>-->
+<html ng-app="myApp">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <script src="components/loader.js"></script>
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="css/style.css">
+    <script>
+    // ons.bootstrap();
+    // ons.disableAutoStatusBarFill();  // (Monaca enables StatusBar plugin by default)
+    // これに置き換える
+    angular.module('myApp', ['onsen']);
+    </script>
+  
+</head>
+
+<body>
+    <!--ons-navigatorのtitleとvar属性を削除-->
+    <!--これだと↓動かない！！！！-->
+    <!--<ons-navigator page="page1.html"></ons-navigator>-->
+    
+    <ons-navigator title="Navigator" var="myNavigator" page="page1.html">
+    </ons-navigator>
+
+</body>
